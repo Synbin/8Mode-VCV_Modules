@@ -7,6 +7,8 @@ Knob16::Knob16()
 {
 	setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/8Mode_Knob1.svg")));
 	shadow->box.pos = Vec(0.0, 0);
+	minAngle = -0.75*M_PI;
+	maxAngle = 0.75*M_PI;
 }
 
 SliderSwitch2State::SliderSwitch2State()
